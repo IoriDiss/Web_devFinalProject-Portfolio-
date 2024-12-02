@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="start">
+    <p id="greeting"></p>
+    <a class="btn step delay" data-step="0" href='#home' id="portfolioLink"></a>
+</div>
+<!--Head section -->
+<div id="home">
+    <header class="header">
+        <a href="#" class="logo"></a>
+        <nav class="navbar"></nav>
+        <div class="toggle">
+            <i class="bx bx-moon toggle-icon"></i>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3 id="home-h3"></h3><br><br>
+            <h1 id="home-h1"></h1>
+            <br><br>
+            <p id="home-p"></p>
+            <div class="social-media"></div>
+            <a class="btn step" data-step="1" id="about-btn"></a>
+        </div>
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="social-media"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="home-img">
+            <img src="img/hero1.png">
+        </div>
+    </section>
+</div>
+<!--About section -->
+<div class="bodyMain" id="about">
+    <div class="person"id="aboutDetail">
+        <div class="container" >
+            <div class="container-inner">
+                <img class="circleProtrait" src="" />
+                <img class="img img1" src="img/hero2.png" />
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <h3>About <span id="meSpan"></span></h3>
+        <h1 id="role"></h1>
+        <p id="description"></p>
+        <a class="btn btnSkills step" data-step="2" href='#skill' id="skillsLink"></a>
+    </div>
+</div>
+<!--Skill section -->
+<div class="skill" id="skill">
+    <h1>My Set of <span>Skills</span></h1>
+    <div class="container_skills" id="skills-container">
+        <div class="card-row" id="cards-container">
+        </div>
+    </div>
+    <button class="btn step" data-step="3" id="projects-btn">Here are my Projects</button>
+</div>
+<main class="portfolio" id="portfolio">
+    <h1>My <span>Projects</span></h1>
+  <div class="card_project" id="card1">
+    <div class="card-top"><img class="card-image"/></div>
+    <div class="card-mid">
+      <h4 class="card-title"></h4>
+      <label class="card-desc"></label>
+      <div class="card-blur-zone"></div>
+    </div>
+  </div>
+  <div class="card_project" id="card2">
+    <div class="card-top"><img class="card-image"/></div>
+    <div class="card-mid">
+      <h4 class="card-title"></h4>
+      <label class="card-desc"></label>
+      <div class="card-blur-zone"></div>
+    </div>
+  </div>
+  <div class="card_project" id="card3">
+    <div class="card-top"><img class="card-image"/></div>
+    <div class="card-mid">
+      <h4 class="card-title"></h4>
+      <label class="card-desc"></label>
+      <div class="card-blur-zone"></div>
+    </div>
+  </div>
+  <div class="card_project" id="card4">
+    <div class="card-top"><img class="card-image"/></div>
+    <div class="card-mid">
+      <h4 class="card-title"></h4>
+      <label class="card-desc"></label>
+      <div class="card-blur-zone"></div>
+    </div>
+  </div>
+  <div class="card_project" id="card5">
+    <div class="card-top"><img class="card-image"/></div>
+    <div class="card-mid">
+      <h4 class="card-title"></h4>
+      <label class="card-desc"></label>
+      <div class="card-blur-zone"></div>
+    </div>
+  </div>
+  <div class="card_project" id="card6">
+    <div class="card-top"><img class="card-image"/></div>
+    <div class="card-mid">
+      <h4 class="card-title"></h4>
+      <label class="card-desc"></label>
+      <div class="card-blur-zone"></div>
+    </div>
+  </div>
+  <a class="btn projectBtn step" data-step="4" href="#contact"> Contact me</a>
+</main>
+<div class="contactContainer" id="contact">
+    <div class="wrapper">
+      <div class="title">
+        <h1>contact us form</h1>
+      </div>
+      <div class="contact-form">
+        <div class="input-fields">
+          <input type="text" class="input" placeholder="Name">
+          <input type="text" class="input" placeholder="Email Address">
+          <input type="tel" class="input" placeholder="Phone">
+          <input type="text" class="input" placeholder="Subject">
+        </div>
+        <div class="msg">
+          <textarea placeholder="Message"></textarea>
+          <button class="btn">Contact me</button>
+        </div>
+      </div>
+    </div>
+    <div>
+    <div class="direct-contact-container">
+        <hr>
+        <ul class="contact-list">
+            <li class="list-item">
+                <i class='bx bx-buildings'></i>
+                <span class="contact-text place" id="place"></span>
+            </li>
+            <li class="list-item">
+                <i class='bx bx-phone'></i>
+                <span class="contact-text phone" id="phone"></span>
+            </li>
+            <li class="list-item">
+                <i class='bx bx-envelope'></i>
+                <span class="contact-text gmail" id="gmail"></span>
+            </li>
+        </ul>
+        <hr>
+        <ul class="social-media-list">
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class='bx bxl-facebook' aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class="bx bxl-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class="bx bxl-instagram-alt" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+                <i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+            </li>       
+        </ul>
+        <hr>
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+    </div>
+    </div>
+</div>        
+ <script src="js/dynamicContent.js"></script>
+ <script type="text/javascript"></script>
+</body>
+</html>
